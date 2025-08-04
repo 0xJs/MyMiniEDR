@@ -1,6 +1,13 @@
 # MyMiniEDR
 My Mini EDR driver to learn about kernel callbacks and EDR detecions. It's work in progress, just releasing it to share code for a short workshop atm :)
 
+# Building
+- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
+- Windows Driver Kit (WDK) for Windows 10/11
+- Enable Kernel Mode Driver (KMDF) development features during install
+- A test-signing enabled VM or test system (for unsigned drivers)
+- Inside the project properties go to Linker -> Command Line, and add the option `/integritycheck` to be able to disable the integrity check. This makes the registration of kernel callbacks possible. Prevents NTSTATUS `0xC0000022`  error on callback registration.
+
 # Kernel Callbacks
 - [x] Process Creation Kernel Callbacks (`PsSetCreateProcessNotifyRoutine`, `PsSetCreateProcessNotifyRoutineEx`, `PsSetCreateProcessNotifyRoutineEx2`)
 - [ ] Thread Creation Kernel Callbacks (`PsSetCreateThreadNotifyRoutine`)
