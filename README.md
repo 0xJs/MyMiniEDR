@@ -22,8 +22,13 @@ My Mini EDR driver to learn about kernel callbacks and EDR detecions. It's work 
 - [ ] File System Filter Callbacks (MiniFilter driver: `FltRegisterFilter`)
 - [ ] Network Filter Callbacks (WFP Callouts / NDIS filter drivers)
 
+# Detections
+- [X] PPID Spoofing
+- [X] Command Line argument (just `mimikatz`)
+- [ ] WRITE TODO 
+
 # Receive output from driver
-- Currently output is written to the debug view
+- Currently output is written to the debug view using the [DbgPrintEx](https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprintex) function. Output can be viewed using the Sysinternals [DebugView](https://learn.microsoft.com/en-us/sysinternals/downloads/debugview)
 
 # Credits
 - The CETP course from [Altered Security](https://www.alteredsecurity.com/evasionlab)
