@@ -18,6 +18,7 @@ My Mini EDR driver to learn about kernel callbacks and EDR detecions. It's work 
 - [ ] Object Callbacks (`ObRegisterCallbacks`)
   - [ ] Process handle operations (OB_TYPE_PROCESS)
   - [ ] Thread handle operations (OB_TYPE_THREAD)
+  - [ ] Token handle operations (OB_TYPE_TOKEN)
 - [ ] File System Filter Callbacks (MiniFilter driver: `FltRegisterFilter`)
 - [ ] Network Filter Callbacks (WFP Callouts / NDIS filter drivers)
 
